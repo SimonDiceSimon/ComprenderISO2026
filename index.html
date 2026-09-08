@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprender las ISO 2026 - Guía Interactiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-slate-900">
+
+    <header class="bg-slate-800/90 backdrop-blur-md border-b border-slate-700/80 py-4 px-6 shadow-lg sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-extrabold text-emerald-400 flex items-center gap-2.5 tracking-tight">
+                <span class="bg-emerald-500/10 p-2 rounded-xl border border-emerald-500/20 text-lg">⚡</span> 
+                <span>Comprender las ISO 2026</span>
+            </h1>
+            <div class="flex items-center gap-2">
+                <span class="text-xs bg-emerald-500/10 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/20 font-semibold shadow-sm">Edición Interactiva</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-4xl w-full mx-auto p-4 sm:p-6 space-y-8 my-4">
+
+        <!-- Intro Banner -->
+        <section class="bg-gradient-to-br from-slate-800 via-slate-800 to-slate-800/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3 tracking-tight">¡Bienvenido a la Guía Interactiva Definitiva!</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Navegá por los capítulos de las normas de gestión aplicando analogías deportivas claras y dinámicas. Hacé clic en cualquiera de los botones de detalle de abajo para abrir una vista inmersiva ampliada y comprender cada concepto en profundidad.
+            </p>
+        </section>
+
+        <article class="bg-slate-800/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-700/80 pb-4 gap-2">
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg border border-emerald-500/20">Capítulo 1</span>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">Alcance y Contexto</h3>
+                </div>
+                <span class="text-xs bg-slate-700/80 text-slate-300 px-3 py-1 rounded-xl font-medium self-start sm:self-auto border border-slate-600">Evolución ISO 2015 vs 2026</span>
+            </div>
+
+            <div class="text-slate-200 text-sm sm:text-base leading-relaxed space-y-4">
+                <p>
+                    El objetivo principal de este capítulo es entender las fronteras y los límites exactos de tu sistema de gestión, identificando con precisión los temas internos y externos que impactan en la organización, y asegurando que la información utilizada sea completamente confiable para la toma de decisiones.
+                </p>
+                <p>
+                    En la versión clásica de 2015, el enfoque era estático, operando como las líneas de cal de un campo de juego que definían rígidamente dónde aplicaba el sistema y dónde no.
+                </p>
+                <p>
+                    Ahora, con la evolución hacia 2026, transformamos el enfoque: adaptamos a todo el equipo para anticipar de manera ágil los cambios externos, integrando nuevos riesgos críticos vinculados a la sostenibilidad a largo plazo y a la seguridad de la información. Para mantenerlo actualizado, debes evaluar permanentemente tus fronteras, validar rigurosamente las fuentes de datos e integrar los nuevos riesgos en tus operaciones diarias.
+                </p>
+            </div>
+
+            <!-- Botones de Desglose Capítulo 1 -->
+            <div class="pt-4 border-t border-slate-700/80">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
+                    <span>🔍</span> Explorar detalles y analogías ampliadas del Capítulo 1:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button onclick="openModal('cap1-1')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿A qué se refiere con "TEMAS"?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-2')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Qué información y para qué se usaba?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-3')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Cómo es el "campo de juego"?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-4')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿A qué equipo nos referimos?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-5')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Qué son los cambios externos?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-6')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Qué significa sostenibilidad?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-7')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Cómo validamos las fuentes de datos?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap1-8')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Qué tipo de riesgos se integran?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-slate-800/90 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-700/80 pb-4 gap-2">
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg border border-emerald-500/20">Capítulo 2</span>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">Referencias Normativas</h3>
+                </div>
+                <span class="text-xs bg-slate-700/80 text-slate-300 px-3 py-1 rounded-xl font-medium self-start sm:self-auto border border-slate-600">Reglas en Tiempo Real</span>
+            </div>
+
+            <div class="text-slate-200 text-sm sm:text-base leading-relaxed space-y-4">
+                <p>
+                    El objetivo de este capítulo es dejar en claro los manuales, reglas de juego universales y reglamentos oficiales que es obligatorio consultar, debido a que contienen las leyes y normativas externas que la organización debe cumplir por ley o por exigencia del mercado para evitar sanciones, garantizando que nuestro sistema de gestión funcione sin infracciones.
+                </p>
+                <p>
+                    En la versión clásica de 2015, este capítulo funcionaba como tener el librito impreso de la AFA o la FIFA sobre la mesa del vestuario, conteniendo los artículos exactos de lectura obligatoria.
+                </p>
+                <p>
+                    Ahora, con la evolución a 2026, el enfoque es dinámico y en tiempo real: ya no miramos un reglamento de papel polvoriento, sino que accedemos mediante enlaces digitales a la base de datos oficial de la organización o federación internacional para consultar al instante la última actualización de las normas vigentes. Para mantenerlo actualizado, debes verificar los hipervínculos activos, chequear que los reglamentos citados no estén derogados mediante un responsable designado que monitorea los cambios, y asegurar que todo el equipo consulte siempre la fuente oficial digital.
+                </p>
+            </div>
+
+            <!-- Botones de Desglose Capítulo 2 -->
+            <div class="pt-4 border-t border-slate-700/80">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4 flex items-center gap-1.5">
+                    <span>🔍</span> Explorar detalles y analogías ampliadas del Capítulo 2:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button onclick="openModal('cap2-1')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Por qué es obligatoria la consulta?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap2-2')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Qué son las reglas universales?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap2-3')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Por qué el librito en la mesa?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap2-4')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Qué es la base en la nube?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap2-5')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Quién me avisa de actualizaciones?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                    <button onclick="openModal('cap2-6')" class="text-left text-xs sm:text-sm bg-slate-700/40 hover:bg-slate-700/80 text-emerald-300 hover:text-emerald-200 p-4 rounded-2xl transition border border-slate-600/50 hover:border-emerald-500/40 flex justify-between items-center group shadow-sm">
+                        <span class="font-medium">¿Cómo se actualizan hipervínculos?</span>
+                        <span class="text-slate-400 group-hover:translate-x-1 transition transform text-base">→</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <div id="detailModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 sm:p-6 transition-all duration-300 opacity-0 scale-95">
+        <div class="bg-slate-800 border border-slate-700 rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-6 relative max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-start border-b border-slate-700/80 pb-4">
+                <div class="flex items-center gap-3">
+                    <span class="bg-emerald-500/10 text-emerald-400 p-2.5 rounded-2xl border border-emerald-500/20 text-xl">💡</span>
+                    <div>
+                        <span class="text-xs uppercase font-semibold text-emerald-400 tracking-wider">Detalle e Interpretación</span>
+                        <h3 id="modalTitle" class="text-xl sm:text-2xl font-bold text-white mt-0.5">Título del Concepto</h3>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-slate-700/60 hover:bg-slate-700 p-2.5 rounded-2xl transition border border-slate-600 flex items-center justify-center">
+                    ✕
+                </button>
+            </div>
+
+            <div class="overflow-y-auto flex-grow pr-1 space-y-4">
+                <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-700/60">
+                    <p class="text-xs uppercase font-semibold text-emerald-400 tracking-wider mb-2">Explicación ampliada:</p>
+                    <p id="modalDescription" class="text-slate-200 text-sm sm:text-base leading-relaxed">
+                        Contenido detallado de la explicación...
+                    </p>
+                </div>
+                <div class="bg-emerald-500/5 p-4 rounded-2xl border border-emerald-500/20">
+                    <p class="text-xs font-semibold text-emerald-300 mb-1">🎯 Analogía clave aplicada:</p>
+                    <p id="modalAnalogy" class="text-emerald-200/90 text-xs sm:text-sm leading-relaxed">
+                        Analogía deportiva relacionada con el concepto para facilitar su comprensión integral en la organización.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-700/80 flex justify-end">
+                <button onclick="closeModal()" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-2xl transition shadow-lg shadow-emerald-500/20 text-sm flex items-center gap-2">
+                    <span>←</span> Volver a la guía principal
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-800/80 border-t border-slate-700/80 py-6 px-6 text-center text-xs text-slate-400 mt-12">
+        <div class="max-w-4xl mx-auto space-y-2">
+            <p class="font-medium text-slate-300">Comprender las ISO 2026 • Diseñado con analogías prácticas y enfoque interactivo inmersivo.</p>
+            <p class="text-slate-500">Transformando la gestión empresarial hacia estándares modernos, ágiles y seguros.</p>
+        </div>
+    </footer>
+
+    <script>
+        const modalData = {
+            // Capítulo 1
+            "cap1-1": {
+                title: "¿A qué se refiere con 'TEMAS'?",
+                description: "En la gestión moderna, los temas internos y externos son todos aquellos factores del entorno o de la propia organización que pueden influir directa o indirectamente en el éxito de tus operaciones y en la calidad de tus productos o servicios.",
+                analogy: "En el deporte son factores como la temperatura extrema de la cancha, el clima, los arbitrajes localistas o la presión de la hinchada rival (externos), y el estado físico, las lesiones o la táctica elegida por el cuerpo técnico (internos)."
+            },
+            "cap1-2": {
+                title: "¿Qué información y para qué se usaba?",
+                description: "La información abarca los registros, datos de desempeño, planillas contables e historiales documentales. En el pasado (norma 2015), se utilizaba principalmente para cumplir con trámites burocráticos estáticos y llenar carpetas físicas obligatorias para presentar ante el auditor externo de turno.",
+                analogy: "Era equivalente a la clásica planilla de papel firmada que el técnico entregaba al juez de línea antes de comenzar el partido para demostrar la lista oficial de titulares autorizados."
+            },
+            "cap1-3": {
+                title: "¿Cómo es el 'campo de juego'?",
+                description: "El campo de juego representa la delimitación física, geográfica o por procesos en la cual se aplica de forma estricta el sistema de gestión. Define con precisión quirúrgica dónde tiene jurisdicción la norma y qué áreas o procesos abarca.",
+                analogy: "Las líneas de cal marcadas en el césped delimitan con exactitud milimétrica el terreno donde está permitido jugar; si la pelota cruza la línea de banda, queda fuera del juego oficial."
+            },
+            "cap1-4": {
+                title: "¿A qué equipo nos referimos?",
+                description: "El 'equipo' engloba de manera colaborativa a toda la estructura de la organización, uniendo el esfuerzo coordinado desde la dirección ejecutiva y los líderes hasta los operarios de primera línea en la ejecución diaria.",
+                analogy: "En el terreno deportivo son los jugadores titulares, los suplentes en el banco de relevos y todo el cuerpo técnico trabajando unidos bajo una misma estrategia táctica para ganar el campeonato."
+            },
+            "cap1-5": {
+                title: "¿Qué son los cambios externos?",
+                description: "Son las transformaciones imprevistas del entorno macroeconómico, normativo, tecnológico o competitivo que obligan a la empresa a reaccionar con rapidez para no perder competitividad ni quedar fuera del mercado.",
+                analogy: "Equivale a que el equipo rival modifique repentinamente su formación táctica en pleno partido, o que comience una tormenta torrencial que obligue a cambiar los botines y ajustar la estrategia de juego instantáneamente."
+            },
+            "cap1-6": {
+                title: "¿Qué significa sostenibilidad?",
+                description: "La sostenibilidad es la capacidad estructural de la organización para perdurar y crecer saludablemente a lo largo de los años, gestionando eficientemente los recursos financieros, el impacto ambiental y el bienestar humano sin comprometer el futuro.",
+                analogy: "Representa la capacidad física y mental de un plantel profesional para rendir al máximo nivel no solo los primeros minutos, sino aguantar los 90 minutos de juego y sostener el rendimiento durante toda la temporada sin romperse."
+            },
+            "cap1-7": {
+                title: "¿Cómo validamos las fuentes de datos?",
+                description: "Validar fuentes implica verificar de forma sistemática que la información recopilada provenga de canales confiables, auditados y oficiales, evitando registrar datos erróneos, obsoletos o inventados que distorsionen la toma de decisiones.",
+                analogy: "Es el proceso riguroso en el que el cuerpo médico revisa los aptos físicos y estudios cardiológicos oficiales de cada jugador antes de firmar la lista de buena fe ante la federación."
+            },
+            "cap1-8": {
+                title: "¿Qué tipo de riesgos se integran?",
+                description: "Son todas las amenazas operativas, financieras, tecnológicas y de ciberseguridad que podrían interrumpir la continuidad del negocio, requiriendo un monitoreo constante y su integración directa en el día a día operativo.",
+                analogy: "Equivale a anticipar el riesgo de que tu mejor delantero sufra un desgarro muscular antes de la final, o que el sistema informático principal sufra un colapso en plena jornada de ventas."
+            },
+
+            // Capítulo 2
+            "cap2-1": {
+                title: "¿Por qué es obligatoria la consulta?",
+                description: "Es obligatoria porque recopila el marco legal externo, las leyes nacionales y los estándares obligatorios que la organización debe cumplir por ley o por exigencia del mercado, evitando costosas sanciones o la descalificación comercial.",
+                analogy: "En el deporte, ignorar el reglamento oficial de la federación implica una sanción inmediata, pérdida de puntos o la descalificación directa del torneo por infringir las leyes vigentes."
+            },
+            "cap2-2": {
+                title: "¿Qué son las reglas universales?",
+                description: "Son los marcos normativos generales, leyes de cumplimiento obligatorio y estándares técnicos estándar que aplican por igual a todas las organizaciones de un mismo sector o industria.",
+                analogy: "Son las reglas fundamentales de la FIFA o del básquet internacional: normas básicas e indiscutibles que ningún equipo puede modificar por capricho propio."
+            },
+            "cap2-3": {
+                title: "¿Por qué el librito impreso en la mesa?",
+                description: "Representa la metodología tradicional y obsoleta utilizada en 2015, donde los manuales normativos se imprimían en papel y se archivaban en carpetas físicas que quedaban desactualizadas apenas se modificaba una ley.",
+                analogy: "Era tener un cuadernillo impreso con el reglamento antiguo sobre la mesa del vestuario, el cual quedaba viejo ante cualquier mínima modificación de los artículos de la federación."
+            },
+            "cap2-4": {
+                title: "¿Qué significa la base de datos oficial en la nube?",
+                description: "Es la evolución tecnológica de 2026, donde toda la normativa, leyes y referencias externas se encuentran alojadas en plataformas digitales en la nube, accesibles al instante, transparentes y actualizadas en tiempo real.",
+                analogy: "Es la plataforma web oficial de la federación donde cualquier miembro del equipo puede consultar desde su celular la última versión instantánea de las reglas vigentes sin margen de error."
+            },
+            "cap2-5": {
+                title: "¿Quién me avisa que están publicadas?",
+                description: "Es el rol clave asignado al responsable de calidad o administrador del sistema, encargado de configurar alertas automáticas y monitorear portales oficiales para notificar de inmediato al equipo ante cualquier cambio.",
+                analogy: "Equivale al secretario técnico o dirigente del club que recibe la circular oficial de la asociación y convoca de inmediato al plantel para comunicarles la nueva regla arbitral."
+            },
+            "cap2-6": {
+                title: "¿Cómo se actualizan los hipervínculos?",
+                description: "Es el procedimiento periódico de control mediante el cual el sector encargado revisa sistemáticamente que los enlaces web a leyes y normativas externas sigan activos, vigentes y sin errores de redirección.",
+                analogy: "Es revisar antes de cada partido que los canales de comunicación oficiales con la liga estén abiertos y operativos, evitando usar enlaces caídos o información desactualizada."
+            }
+        };
+
+        function openModal(id) {
+            const data = modalData[id];
+            if (!data) return;
+
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalDescription').innerText = data.description;
+            document.getElementById('modalAnalogy').innerText = data.analogy;
+
+            const modal = document.getElementById('detailModal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0', 'scale-95');
+                modal.classList.add('opacity-100', 'scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('detailModal');
+            modal.classList.remove('opacity-100', 'scale-100');
+            modal.classList.add('opacity-0', 'scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Cerrar con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
